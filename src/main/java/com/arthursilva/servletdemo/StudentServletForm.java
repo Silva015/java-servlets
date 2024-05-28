@@ -8,14 +8,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
-public class HelloWorldServlet extends HttpServlet {
+public class StudentServletForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public HelloWorldServlet() {
+	public StudentServletForm() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -32,13 +31,10 @@ public class HelloWorldServlet extends HttpServlet {
 		// Step 2: get the printWriter
 		PrintWriter out = response.getWriter();
 
-		// Step 3: generate HTML contents
+		// Step 3: generate the HTML content
 		out.println("<html><body>");
-
-		out.println("<h2>Hello World</h2>");
-		out.println("<hr>");
-		out.println("Time on the server is: " + new java.util.Date());
-
+		out.println("The student is confirmed: " + request.getParameter("firstName") + " "
+				+ request.getParameter("lastName"));
 		out.println("</html></body>");
 	}
 

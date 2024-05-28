@@ -19,4 +19,24 @@
     <servlet-name>HelloWorldServlet</servlet-name>
     <url-pattern>/HelloWorldServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentServlet</display-name>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.arthursilva.servletdemo.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/StudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentServletForm</display-name>
+    <servlet-name>StudentServletForm</servlet-name>
+    <servlet-class>com.arthursilva.servletdemo.StudentServletForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServletForm</servlet-name>
+    <url-pattern>/StudentServletForm</url-pattern>
+  </servlet-mapping>
 </web-app>
